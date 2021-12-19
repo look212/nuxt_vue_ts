@@ -12,7 +12,7 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/',
+  base: '/nuxt_vue_ts/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,

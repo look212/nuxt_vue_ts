@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "bootstrap": "^4.6.1",
@@ -26,6 +27,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.4.4",
     "jest": "^27.4.4",
+    "push-dir": "^0.4.1",
     "ts-jest": "^27.1.1",
     "vue-jest": "^3.0.4"
   }

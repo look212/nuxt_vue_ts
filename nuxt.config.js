@@ -47,7 +47,6 @@ export default {
   },
 
   // Build path change
-  buildDir: 'docs',
   target: 'static',
   router: {
     base: '/nuxt_vue_ts/'

@@ -50,5 +50,8 @@ export default {
   target: 'static',
   router: {
     base: '/nuxt_vue_ts/'
+  },
+  generate: {
+    dir: 'docs'
   }
 }

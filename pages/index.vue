@@ -1,11 +1,17 @@
 <template>
-  <Tutorial/>
+  <div>
+    <div>login</div>
+    <a href="/admin">Go admin</a>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import {
+  defineComponent
+} from '@nuxtjs/composition-api';
 
-export default Vue.extend({
-  name: 'IndexPage'
+export default defineComponent({
+  name: 'Login',
+  layout: 'empty',
 })
 </script>

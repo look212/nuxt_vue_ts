@@ -1,0 +1,33 @@
+@mixin ellipsis () {
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+@mixin lineClamp($maxLine: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $maxLine;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+@mixin transform ($contents) {
+  -webkit-transform: $contents;
+  -moz-transform: $contents;
+  -ms-transform: $contents;
+  -o-transform: $contents;
+  transform: $contents;
+}
+
+@mixin transition ($contents) {
+  -webkit-transition: $contents;
+  -moz-transition: $contents;
+  -o-transition: $contents;
+  transition: $contents;
+}
+
+@mixin bgDefault {
+  background-color: var(--Gray00);
+}

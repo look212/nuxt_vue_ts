@@ -1,0 +1,6 @@
+// font 변수 설정
+$defaultFont: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo', 'helvetica', '맑은 고딕', 'sans-serif';
+
+// notch 영역 대응
+$safeTopHeight: env(safe-area-inset-top);
+$safeBottomHeight: env(safe-area-inset-bottom);

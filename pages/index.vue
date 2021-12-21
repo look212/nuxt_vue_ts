@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div>login</div>
-    <a href="/admin">Go admin</a>
+    <Tutorial/>
   </div>
 </template>
 

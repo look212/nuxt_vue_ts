@@ -51,9 +51,9 @@ export default {
   },
 
   // Build path change
-  generate: {
-    dir: 'docs'
-  },
+  // generate: {
+  //   dir: 'docs'
+  // },
   target: 'static',
   router: {
     base: '/nuxt_vue_ts/'

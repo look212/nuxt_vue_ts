@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Tutorial/>
+    <h1>Login</h1>
+    <b-link to="admin">Go admin!!</b-link>
   </div>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Login</h1>
-    <b-link to="admin">Go admin!!</b-link>
+    <SimpleHeader/>
   </div>
 </template>
 
@@ -9,9 +8,11 @@
 import {
   defineComponent
 } from '@nuxtjs/composition-api';
+import SimpleHeader from '~/components/SimpleHeader.vue';
 
 export default defineComponent({
-  name: 'Login',
-  layout: 'empty',
+  name: 'Main',
+  components: {SimpleHeader},
+
 })
 </script>

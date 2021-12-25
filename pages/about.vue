@@ -1,10 +1,10 @@
 <template>
-  <div>Admin Page</div>
+  <div>About Vue page</div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  name: "Admin"
+  name: "about"
 }
 </script>
 

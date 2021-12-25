@@ -4,9 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt_vue_ts',
+    title: 'jbh portfolio',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ko'
     },
     meta: [
       { charset: 'utf-8' },
@@ -15,7 +15,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com" crossOrigin' },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
+          'https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet'
+      }
     ]
   },
 
@@ -23,6 +31,10 @@ export default {
   css: [
     '@/assets/scss/index.scss',
   ],
+
+  styleResources: {
+    scss: ['~/assets/scss/abstract/*.scss'],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [

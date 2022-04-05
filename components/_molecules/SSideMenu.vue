@@ -14,7 +14,17 @@ export default defineComponent({
     const data = reactive({
       menus: [
         { label: 'document', link: '' },
-        { label: 'button', link: 'button' }
+        { label: 'button', link: 'button' },
+        { label: 'input', link: 'input' },
+        { label: 'select', link: 'select' },
+        { label: 'spinner', link: 'spinner' },
+        { label: 'textarea', link: 'textarea' },
+        { label: 'radio', link: 'radio' },
+        { label: 'collapse', link: 'collapse' },
+        { label: 'drawer', link: 'drawer' },
+        { label: 'goTop', link: 'goTop' },
+        { label: 'modal', link: 'modal' },
+        { label: 'imageUpload', link: 'imageUpload' },
       ]
     })
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Simple button design.</p>
+    <p>Simple design button component.</p>
     <h2>default</h2>
     <p>width: 100%, size: medium</p>
     <div>
@@ -39,16 +39,8 @@
     </div>
     <pre><code>&lt;s-button :is-disabled="true"&gt;disabled&lt;/s-button&gt;</code></pre>
     <h2>action</h2>
-    <div>
-      <s-button @click="test('haha')">haha</s-button>
-    </div>
-    <pre><code>&lt;s-button @click="test('haha')"&gt;haha&lt;/s-button&gt;
-
-  &lt;script type="ts"&gt;
-      test(value: string) {
-        console.log(value);
-      }
-  &lt;/script&gt;</code></pre>
+    <h3>click</h3>
+    <p>클릭시 동작 method 연결</p>
   </div>
 </template>
 
@@ -57,7 +49,7 @@ import { defineComponent } from '@nuxtjs/composition-api';
 import SButton from '~/components/_atoms/SButton.vue';
 
 export default defineComponent({
-  name: "Button",
+  name: 'Button',
   components: {
     SButton,
   },
@@ -86,6 +78,7 @@ export default defineComponent({
 
   &.type2 {
     border: 1px solid $Gray50;
+
     .button__image {
       padding-top: 20px;
       background-position: center top;

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{339:function(e,n,t){"use strict";t.r(n);var r={name:"history"},o=t(74),component=Object(o.a)(r,(function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",[e._v("history page")])}),[],!1,null,"62750724",null);n.default=component.exports}}]);

@@ -7,7 +7,6 @@
               :class="['button__icon',
               `button__${iconType}`]"
               @click="handleClick">
-        {{ iconText }}
         <slot/>
       </button>
     </template>
@@ -16,7 +15,7 @@
               :class="{'active': !isDisabled}"
               :disabled="isDisabled"
               @click="handleClick">
-        {{ buttonText }}
+        <slot/>
       </button>
     </template>
   </span>
@@ -34,19 +33,16 @@ enum iconType {
   back = 'back',
   close = 'close',
   logout = 'logout',
-  footer = 'footer',
   image = 'image',
 }
 
 /**
  * Button
  * @param {string} size - large, medium(default)
- * @param {string} buttonText - 버튼 텍스트
  * @param {boolean} isDisabled - 비활성 상태
  * @param {boolean} isInline - 텍스트 버튼일 경우. 기본 display:block, width: 100% 상태이므로 inLine 필요시 추가.
  * @param {boolean} isIcon - 텍스트 없이 아이콘일 경우.
  * @param {string} iconType - back, close(default), logout, footer, image
- * @param {string} iconText - 아이콘일 경우 아이콘 하단 텍스트
  * @method handleClick - 부모 component에서 click event 실행
  */
 
@@ -56,9 +52,6 @@ export default defineComponent({
     size: {
       type: String as PropType<sizeType>,
       default: sizeType.medium,
-    },
-    buttonText: {
-      type: String
     },
     isDisabled: {
       type: Boolean,
@@ -75,9 +68,6 @@ export default defineComponent({
       type: String as PropType<iconType>,
       default: iconType.close,
       require: true,
-    },
-    iconText: {
-      type: String,
     },
   },
   setup(props, { emit }) {
@@ -153,8 +143,9 @@ button {
     }
   }
   &.button__image {
-    min-width: inherit;
-    padding-top: inherit;
+    min-width: 30px;
+    padding-top: 30px;
+    color: $Gray90;
   }
 }
 </style>

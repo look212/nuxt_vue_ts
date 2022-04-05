@@ -66,3 +66,31 @@ body {
     }
   }
 }
+
+pre {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: $Gray20;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+  position: relative;
+
+  &::after {
+    content: 'code';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $Gray40;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    line-height: 1.75em;
+  }
+}

@@ -1,4 +1,68 @@
-html, body {
-  color: var(--Gray90);
-  background-color: var(--Gray00);
+body {
+  background: #{$Gray10};
+  color: #{$Gray90};
+}
+
+// sweetalert style custom
+.modal_container.swal2-container {
+  padding: 30px;
+  .swal2-popup {
+    border-radius: 16px;
+    padding-bottom: 16px;
+  }
+
+  .swal2-title {
+    padding: 30px 25px 20px;
+    font-size: 20px;
+    color: $Gray90;
+    line-height: 1.5em;
+    word-break: keep-all;
+  }
+
+  .swal2-html-container {
+    margin: -6px auto 20px;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: $Gray60;
+  }
+
+  .swal2-actions {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    gap: 4px;
+
+    .swal2-styled {
+      margin: 0;
+      height: 44px;
+      border-radius: 8px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .swal2-cancel {
+      background: $Gray20;
+      color: $Gray90;
+      font-size: 16px;
+    }
+
+    .swal2-confirm {
+      background: $Gray90;
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+    }
+  }
+
+  &.is_cancelBtn {
+    .swal2-actions {
+      .swal2-cancel,
+      .swal2-confirm {
+        width: calc(50% - 2px)
+      }
+    }
+  }
 }

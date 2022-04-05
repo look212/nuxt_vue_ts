@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SimpleHeader/>
+    main page
   </div>
 </template>
 
@@ -8,11 +8,8 @@
 import {
   defineComponent
 } from '@nuxtjs/composition-api';
-import SimpleHeader from '~/components/SimpleHeader.vue';
 
 export default defineComponent({
   name: 'Main',
-  components: {SimpleHeader},
-
 })
 </script>

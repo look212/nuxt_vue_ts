@@ -1,8 +1,8 @@
 <template>
   <header>
-    <b-link to="about">About</b-link>
-    <b-link to="work">Work</b-link>
-    <b-link to="history">History</b-link>
+    <a href="/about">About</a>
+    <a href="/work">Work</a>
+    <a href="/history">History</a>
   </header>
 </template>
 
@@ -10,7 +10,7 @@
 import {defineComponent} from '@nuxtjs/composition-api';
 
 export default defineComponent({
-  name: "SimpleHeader",
+  name: "SHeader",
 });
 </script>
 

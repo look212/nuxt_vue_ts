@@ -38,7 +38,24 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/vue-sweetalert2',
   ],
+
+  // sweetalert style custom
+  sweetalert: {
+    customClass: {
+      /**
+       * confirm 사용시 showCancelButton: true 추가하여 사용할것.
+       * showCancelButton: true 일경우 is_cancelBtn 추가해야함
+       * container: 'modal_container is_cancelBtn',
+       */
+      container: 'modal_container',
+    },
+    confirmButtonText: '확인',
+    cancelButtonText: '아니오',
+    reverseButtons: true,
+    focusConfirm: false,
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -55,7 +72,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

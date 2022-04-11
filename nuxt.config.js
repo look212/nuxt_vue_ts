@@ -71,7 +71,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -83,7 +82,4 @@ export default {
     dir: 'docs'
   },
   target: 'static',
-  router: {
-    base: '/nuxt_vue_ts/'
-  },
 }
